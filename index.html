@@ -34,7 +34,15 @@
     <section id="hero" class="hero-section">
         <div class="hero-content container">
             <div class="hero-text animate-left">
-                <h1>Hi, I'm <span class="highlight">Dikesh Khatri</span></h1>
+ <h1 class="hero-text">Hi, I'm 
+  <span class="highlight animated-text">
+    <span>D</span><span>i</span><span>k</span><span>e</span><span>s</span><span>h</span>
+    <span> </span>
+    <span>K</span><span>h</span><span>a</span><span>t</span><span>r</span><span>i</span>
+  </span>
+</h1>
+
+
                 <h2>A Passionate Software Developer</h2>
                 <p>I specialize in building modern web applications with a focus on clean code and great user experiences. Familiar with both LAMP and TALL stacks.</p>
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -163,7 +171,7 @@
                 <div class="experience-content">
                     <h3>Software Developer</h3>
                     <p class="experience-company">Studio Matrix</p>
-                    <p class="experience-duration">jan 2025 - May 2025 (6 Months)</p>
+                    <p class="experience-duration">jan 2025 - May 2025 </p>
                     <p>Contributed to the development of various web applications, focusing on back-end logic with Laravel and front-end enhancements. Gained hands-on experience with agile methodologies and version control systems.</p>
                 </div>
             </div>
@@ -171,18 +179,39 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title animate-fade-in">Get In Touch</h2>
-            <p class="animate-fade-in">I'm currently looking for new opportunities. Whether you have a project in mind or just want to say hi, feel free to reach out!</p>
-            <div class="contact-info animate-fade-in">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-            </div>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title animate-fade-in">Get In Touch</h2>
+    <p class="section-subtitle animate-fade-in">I'm open to new opportunities and collaborations. Just drop a message!</p>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <div class="form-field">
+          <input type="text" name="name" required>
+          <label>Your Name</label>
         </div>
-    </section>
+        <div class="form-field">
+          <input type="email" name="email" required>
+          <label>Your Email</label>
+        </div>
+      </div>
+      <div class="form-field full">
+        <textarea name="message" rows="5" required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit" class="btn-animated">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Footer -->
     <footer>

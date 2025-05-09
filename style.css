@@ -9,15 +9,16 @@
     }
 }
 :root {
-    --primary-color: #3498DB; /* A nice, modern blue */
-    --secondary-color: #2ECC71; /* A vibrant green for accents */
-    --light-bg: #f8f9fa; /* Very light grey, almost white */
-    --dark-text: #343a40; /* Dark grey for text */
-    --light-text: #f8f9fa;
-    --card-bg: #ffffff;
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --border-radius: 8px;
-    --transition-speed: 0.3s;
+--primary-color: #3498DB;
+--primary-color-light: #5dade2; /* lighter version of primary */
+--secondary-color: #2ECC71;
+--light-bg: #f8f9fa;
+--dark-text: #343a40;
+--light-text: #f8f9fa;
+--card-bg: #ffffff;
+--shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--border-radius: 8px;
+--transition-speed: 0.3s;
 }
 
 * {
@@ -211,6 +212,34 @@ nav {
 .hero-text h1 .highlight {
     color: var(--primary-color);
 }
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  animation: showHide 3s linear infinite;
+}
+
+@keyframes showHide {
+  0%, 100% { opacity: 0; transform: translateY(-10px); }
+  10%, 90% { opacity: 1; transform: translateY(0); }
+}
+
+/* Forward appear delays */
+.animated-text span:nth-child(1)  { animation-delay: 0s; }
+.animated-text span:nth-child(2)  { animation-delay: 0.1s; }
+.animated-text span:nth-child(3)  { animation-delay: 0.2s; }
+.animated-text span:nth-child(4)  { animation-delay: 0.3s; }
+.animated-text span:nth-child(5)  { animation-delay: 0.4s; }
+.animated-text span:nth-child(6)  { animation-delay: 0.5s; }
+.animated-text span:nth-child(7)  { animation-delay: 0.6s; }
+.animated-text span:nth-child(8)  { animation-delay: 0.7s; }
+.animated-text span:nth-child(9)  { animation-delay: 0.8s; }
+.animated-text span:nth-child(10) { animation-delay: 0.9s; }
+.animated-text span:nth-child(11) { animation-delay: 1.0s; }
+.animated-text span:nth-child(12) { animation-delay: 1.1s; }
+.animated-text span:nth-child(13) { animation-delay: 1.2s; }
+
+/* Reverse hide delays (using reverse timing inside same animation cycle) */
+
 
 .hero-text h2 {
     font-size: 1.8rem;
@@ -280,14 +309,16 @@ nav {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--light-text);
+background-color: var(--primary-color);
+color: var(--light-text);
+transition: background-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
 }
+
 .btn-primary:hover {
-    background-color: darken(var(--primary-color), 10%);
-    color: var(--light-text);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+background-color: var(--primary-color-light);
+color: var(--light-text);
+transform: translateY(-3px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary {
@@ -317,8 +348,9 @@ nav {
 
 /* --- Projects Section --- */
 .projects-section {
-    background-color: var(--card-bg); /* Slightly different from body for visual separation */
+    background-color: var(--card-bg);
 }
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -326,7 +358,7 @@ nav {
 }
 
 .project-card {
-    background: var(--light-bg); /* Cards on card-bg section get light-bg */
+    background: var(--light-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -336,29 +368,38 @@ nav {
 }
 
 .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) scale(1.05); /* Smooth zoom effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Slight zoom effect on the image */
 }
 
 .project-info {
     padding: 1.5rem;
-    flex-grow: 1; /* Makes info take remaining space if cards have different text lengths */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
+
 .project-info h3 {
     color: var(--primary-color);
 }
+
 .project-info p {
-    flex-grow: 1; /* Pushes button to bottom */
+    flex-grow: 1;
     margin-bottom: 1rem;
 }
+
 
 /* --- Skills Section --- */
 .skills-section .stack-mention {
@@ -367,6 +408,7 @@ nav {
     margin-bottom: 2.5rem;
     color: #555;
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -383,12 +425,29 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transition: transform var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out;
 }
 
 .skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateY(-10px); /* Slightly larger lift for more noticeable hover effect */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15); /* Enhanced shadow for better hover effect */
+    animation: hoverAnimation 0.3s ease-out;
+}
+
+/* Hover animation keyframes */
+@keyframes hoverAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
 }
 
 .skill-icon {
@@ -403,14 +462,26 @@ nav {
     object-fit: contain;
     margin-bottom: 0.8rem;
 }
+
 .skill-item span {
     font-weight: 500;
 }
-/* Specific logo tweaks if needed */
-.alpine-logo { filter: invert(39%) sepia(61%) saturate(1180%) hue-rotate(177deg) brightness(93%) contrast(87%); /* Match primary color approx */ }
-.jquery-logo { width: 100px; }
-.filament-logo, .livewire-logo { height: 40px; } /* Adjust for better visual balance */
 
+/* Specific logo tweaks if needed */
+.alpine-logo {
+    filter: invert(39%) sepia(61%) saturate(1180%) hue-rotate(177deg) brightness(93%) contrast(87%);
+    /* Match primary color approx */
+}
+
+.jquery-logo {
+    width: 100px;
+}
+
+.filament-logo,
+.livewire-logo {
+    height: 40px;
+    /* Adjust for better visual balance */
+}
 
 /* --- Experience Section --- */
 .experience-section {
@@ -455,18 +526,151 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-/* --- Contact Section --- */
+:root {
+  --primary-color: #007bff;
+  --bg-light: #f5f7fa;
+  --text-dark: #333;
+}
+
 .contact-section {
-    text-align: center;
+  background: var(--bg-light);
+  padding: 80px 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
 }
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
 }
-.contact-info i {
-    margin-right: 10px;
-    color: var(--primary-color);
+
+.section-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
 }
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .form-group {
+    flex-direction: row;
+  }
+}
+
+.form-field {
+  position: relative;
+  width: 100%;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 16px 12px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-field label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.form-field input:focus + label,
+.form-field input:valid + label,
+.form-field textarea:focus + label,
+.form-field textarea:valid + label {
+  top: -10px;
+  left: 10px;
+  background: var(--bg-light);
+  padding: 0 5px;
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-animated {
+  background: var(--primary-color);
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.btn-animated::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.3);
+  transition: left 0.4s;
+}
+
+.btn-animated:hover::after {
+  left: 100%;
+}
+
+.btn-animated:hover {
+  background: #0056b3;
+}
+
+.social-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 
 /* --- Footer --- */
 footer {
