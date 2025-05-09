@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        
         navLi.forEach(a => {
             a.classList.remove('active');
             if (a.getAttribute('href').substring(1) === current) {
