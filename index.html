@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - Dikesh</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header/Navigation -->
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo">Dikesh Khatri</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content container">
+            <div class="hero-text animate-left">
+                <h1 class="hero-text">Hi, I'm
+                    <span class="highlight animated-text">
+                        <span>D</span><span>i</span><span>k</span><span>e</span><span>s</span><span>h</span>
+                        <span> </span>
+                        <span>K</span><span>h</span><span>a</span><span>t</span><span>r</span><span>i</span>
+                    </span>
+                </h1>
+
+                <h2>
+                    A Passionate Software Developer - <br>
+                    <span style="display: inline-flex; align-items: center;">
+                        Nepal
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"
+                            alt="Nepal Flag" style="height: 30px; margin-left: 6px;">
+                    </span>
+                </h2>
+
+                <p>I am Full Stack Developer specialize in building modern
+                    web applications with a
+                    focus on clean code and great user experiences. Familiar
+                    with both LAMP and TALL stacks.</p>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In
+                    Touch</a>
+            </div>
+            <div class="hero-image animate-right">
+                <img src="dkk.jpeg" alt="Software Developer">
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image animate-left">
+                    <img src="aboutme.jpg" alt="Dikesh Khatri" class="profile-img">
+                </div>
+                <div class="about-text animate-right">
+                    <h3 class="intro-heading animate-text">
+                        Hello! I'm <span class="highlight-name">Dikesh
+                            Khatri</span>
+                    </h3>
+                    <p>I am a passionate software developer, I am deeply
+                        interested in software development, particularly in
+                        creating Web applications. With expertise in
+                        PHP, Laravel, JavaScript, Filament,
+                        Livewire and MySQL, I excel at developing practical
+                        and effective solutions. I am extremely eager to
+                        explore and learn new things and connect with others
+                        and I would like to collaborate on exciting
+                        projects. 🚀</p>
+                    <div class="social-contact">
+                        <div class="social-icons">
+                            <a href="https://github.com/Dikeshkhatree" target="_blank">
+                                <img src="github.png" alt="GitHub">
+                            </a>
+                            <a href="https://www.linkedin.com/in/dikesh-khatri-89725631a/" target="_blank">
+                                <img src="linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://wa.me/yourwhatsappphonenumber" target="_blank">
+                                <img src="whatsapp.jpeg" alt="WhatsApp">
+                            </a>
+                            <a href="https://facebook.com/yourprofile" target="_blank">
+                                <img src="facebook.png" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com/yourprofile" target="_blank">
+                                <img src="twitter.png" alt="Twitter">
+                            </a>
+                        </div>
+
+                        <div class="contact-button-wrapper">
+                            <a href="#contact" class="contact-button">Contact me</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">My Education</h2>
+            <div class="education-grid animate-fade-in">
+                <div class="education-card">
+                    <h3>Bachelor of Science - Information Technology (BSC
+                        Computer Science - BSCIT)</h3>
+                    <p>Wolverhampton University based in London<br>2021(oct)
+                        -
+                        2025(Jan)</p>
+                </div>
+                <div class="education-card">
+                    <h3>+2 Science - Physics, Math</h3>
+                    <p>Triyuga Model School, Udayapur<br>2019 - 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card animate-card">
+                    <img src="https://www.shutterstock.com/image-photo/analyst-uses-computer-dashboard-data-260nw-2285412737.jpg"
+                        alt="HR Software">
+                    <div class="project-info">
+                        <h3>HR Software</h3>
+                        <p>A comprehensive solution for managing human
+                            resources, payroll, and employee data.</p>
+                        <a href="https://github.com/Dikeshkhatree/HR_Software" class="btn-link">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card animate-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtadYo6vYE-KegCSFGz8Y0T132IAbb9pqaUg&s"
+                        alt="Traffic Management System">
+                    <div class="project-info">
+                        <h3>Traffic Management System</h3>
+                        <p>An intelligent system for monitoring and
+                            optimizing urban traffic flow.</p>
+                        <a href="https://dikeshkhatree.github.io/Traffic/" class="btn-link">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card animate-card">
+                    <img src="https://media.istockphoto.com/id/1391824162/photo/smart-augmented-reality-ar-warehouse-management-system.jpg?s=612x612&w=0&k=20&c=VhEA03xUH-WR9hnJTiaDSKNLZMTG8WoT_KaloAVVuX0="
+                        alt="POS System">
+                    <div class="project-info">
+                        <h3>POS (Point of Sale)</h3>
+                        <p>A user-friendly point of sale system for retail
+                            businesses with inventory management.</p>
+                        <a href="javascript:void(0)" class="btn-link" onclick="openPopup()">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+
+                    </div>
+                </div>
+                <div class="project-card animate-card">
+                    <img src="dictionary.png" alt="Dictionary">
+                    <div class="project-info">
+                        <h3>Dictionary App</h3>
+                        <p>Built a dictionary app that uses API allows users to search for word definitions.
+                        </p>
+                        <a href="https://dikeshkhatree.github.io/Dictionary" class="btn-link">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card animate-card">
+                    <img src="game.jpeg" alt="Fist Look Game">
+                    <div class="project-info">
+                        <h3>First Look Games</h3>
+                        <p>Resolved back-end bugs and
+                            implemented new features to enhance the
+                            functionality of a
+                            gaming platform.</p>
+
+                        <a href="https://firstlookgames.com/" class="btn-link">View Details <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Skills &
+                Technologies</h2>
+            <p class="stack-mention animate-fade-in">Proficient in the
+                <strong>LAMP</strong> (Linux, Apache, MySQL, PHP) stack and
+                the <strong>TALL</strong> (Tailwind CSS, Alpine.js, Laravel,
+                Livewire) stack.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-item animate-skill">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <img src="data:image/png;base64,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"
+                        alt="Tailwind CSS" class="skill-icon-img">
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-bootstrap skill-icon"></i>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdlBXwUZc-FzlLCoKQdxWqoWcMLW-y81jmA&s"
+                        alt="Alpine.js" class="skill-icon-img alpine-logo">
+                    <span>Alpine.js</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAADOCAMAAAA+EN8HAAAAxlBMVEX///8Hc7QUHi0AcbMAa7AAbbEAb7IAarAAABgPGioRHCsAABsAABINGSkAABoLFygACyAAECPp8vjt7u8ABh7V5vH5+fry+PsFFCYAABGOkZbG3Oy71ej19fbl8PfM4O49RE/U1djKzM+3ur55fYQgKTjg4eOgxN41h75NlMRloMsGeLatzON3q9GItdaTu9lZX2hlanOoq7AqMj+ZnKJvdHxMk8V9rtI1PEi+wcWFiZBHTVh1eoGusLU6QU07i8FQVV8AAAH73mQgAAAOQklEQVR4nO1cCVuqTBQWh0VFLyqCVrhVKopbmmbZdv//n/pmY3Ug7UvALm/dHmWROXO295wZby6XIUOGDBkyZMiQIUOGDBkyZMiQIUOGDBniQTPpASSAzjTpESSArZH0COLHVNCSHkLsaJqgk/QYYsdI4upJjyF2mMD6zUI3WQHrRgK/WtMTVmqaieA3+/RI6jKOmoD7xdFbE0WGGXc4wPG/N09/CCaDbmoCx/GL+EcTDxY8MBmHDYnjxHHso4kHdQ4wZZvyHMdZv7TieOI5ccI4foOE5m9iH08cqFscJ8wYJzQRCi2wpuPyMYIKFVjxCpo9xwFw0fSkOWa754cYIjTK02GnLgVjVoSGRsyHSjZD9s1dMv2eSWzvHIULjXJWiL9fBqa8NGKeGGMbnrNO1TkM4VIDuAaAxBx704rQ5gTbN7Aus+rQUe3AHDrOS+w8De2bx6oWt2cd3LkA+UcItyJygRC2ieM3x0mX6NaaADgmvaZxLOwk6hdh8E9nHN2ZsBVDLfhJwEJzIRTbFLkL1TU2YYGtLBKrOIHVRMjZWQtdEEJtUgusrpDKmArNh61kzHhbavOimigkVgnsNG1rOqyu0G0D50TA/oR0YgsidEmFBpYecnfHAlRqIH1cjLI1IcprqdARHUDDNnCobG52IUT8KVLouUCTEpOIYhiirWsOCNyMNTv1UfjtSUCn5hmiyhHVY1imRjBEkXPFFrdTP7drGhMuZUy1S6US2UI7xhvVF9IsgXPFBrxozqZdrdPpaN3p/IOTBDEk4yUF235DhNZs2w0hLwT1scRxXrkFngeQ5Yk8L4jwRdq64x/UNHm20KTKQoKEzArFiBMA5wcA5AhvpS2o40YX9ukQ8906eTi6BVifiQdiY9H5Seq42o3tjUII53qyL/hC1TBjzy1JAF7BkZlvU9hiGNky8SF8yk3DX5fNzZuZCZAbC6IoCAIKaGmzbIyZo+mQTOrYfwQB96LTHS2eZuPJ7GlhpFLiHG2BYaHDisOtSz1Slm2/DdNhzmHGO3JppvA7luucjATVGHJJ3ROZpHSxyW+i6dZIodtHJl6SmTaa8R14w1RYbtG8bEtMYQY6FXW3QgrLWTDYuar+FcHMo+nwTQVdL9USL1/quuXKE76pYOIpoqDUl27hbvSOKh69ARxFswvf76x7hA7jZDlfrsZSf7O3r6WkmWS65h3VHPHGMtQCHH9n+FpaVgTGnhgVUlIjdDh/2ShapyfsGyst/ZOZR4UR9u3t/hFl87MTy+Rpelbvvd4KojaFzX0NITRF1knxbCamZ5+G4Q1RkbXjEx+QGkjbo2tHzeRTtCNH85qtGBHKAtmaXC9MjmIq+gKI4sfPDPgnoFteX+WjQo0+PpCaE8ERvRHD5AEAaeoo+JLRF/tbx0ELx839cSRD02+2vAjjXqoIzcInSPROIX0mHTY8gcibizA1dkYmH7EQnBS6frIV6dWMGE7u4kVzfhMMzk1tsaVtYT412YrAy765qAKTYApYzW3c7OXMyXxkdCFuDGMx+7AEnlwM0iazrzGC8FU2hcmHJTUWXBQEiZcEnpd4wV3UA19NZAKY+oX4ci9zc8Jw7AgI32CsZ0c9QKulL8doWPzRYgN+nMqmg7+C4o74Vl3zib1udQj+NK4aH4yAkwpH7HrUJkeIDXhrnrrFOxtWYPhHBVsodrSRi5K1SE2JcYhFkF4eF247c1hFMDMYjOO8NTHCNiSlAp2DQR/b3e7OTYAEt0Wnuw+A+WSk1q5tBFI1Wu44ujzoGPOxaXECj34AZ5mTxQE3SyW0AyMVT9sy0ex0uoZxo3UuQlyK2WGpnLqNIj+OYN/v35B6cUioxdRthPppNE1GoRyyMfj3wGAUyiBiQ+jvwGHbD4K/tP36J6IZJKMYgvljqxLNNBK0G2ZzAIg/VCbV0/mFnoNuPpFa+pFtjnUzpava4yAbpSb+A6vwXSutXy6vW2ypgXDqYl0QUyu9mza6YQXyiYt1ATQnYV/ZTQWMsL4A4MffZqU3ppCmhaxDLEK7ISL43jdx6jO0xJFa48ZgL2EQz+bmJ4vdXKCvd6RrIYuBcKnh4I9Zo/SgPrfw/4WSugWOAywievlAFLfTYyN5d8LhzM9fwt5hRpnpERtI1sT42sy1BeoaojuEj4vg71MxuqUt8tZ4pIWL0uzOP5z+sMj6D67SCINjsxSPwgUo+NzQAlWE3tSM+daSeKfpdiF6RuiYrELzQHBBsMztZLYYTUej0WI2GZsWPObbz3E5MmMSddRiFYChDfV+EUQBBLqqQJqlsZ4Mx+ILxz5mRqJ246UTXfP4BVkmLrKzqM/BV/EsSs3SNt3cMwzax2mbDrxqFtO1n+gUTL9n4+L/KMpSgObIOlnbQDIv0Jt90KG2T4nkIm+muGNwNJrGGBwrtyAdX5GkHZ3RFnzp3Wj/QTq/O/xtaKMxJNVi2I5BkefN2c1vUbIHze5iAuk1ZZwEIt4myJmT0WWm5eNQ14zRE6wtTMu0LNP8gAXHtHtJOxD+F3S9mcr1qQwZMmTIkCFDhgwZLgFtVW23kx5EnBiulruBUsvveve3/0gh8bYv/GkppVKpWFGq5d0q6fHEgNv3spL3QCnvh0mP6dxYya18ALXBuaVWNw+bB/i7Uc/8IDYey6WgzPl8a33ewej7PzWE8sNZHxMGV+aiAt3alrqxOetTr//gp5SU2BStY5DXz1TmUq0w+Fz2BgXbuwu3x37c8Pnx5eX6re8N+npb9yFwS18mTy3EFjKf33v7/b63RK/VdYVoubHBg1af9w3q1tTw7pfL/cPyxZFms/+ER67t9+pjTy7I1WqjIK/vnUDQH6x36x36RX/W6/flw51nBHqPRJFqfMb9KisQ1U/8mohYyT87A1pWyTTkseWpV7WWUpM/7dO3f1sQ5UfyTn0pyk7gr1Rlejj3WChWIOw/0HFqVx4BX4hxK2cOHF708DDxAKmZlarP7ml1UMRDusL2fVfGan+1zz7K2CzJ9XcDuegNf6UrKvVr7TA2XjnPuC2Qq+WjPeh/QyWCltETl2Rw1XvvBS9E1fLKfeOoMLdEhlkqYhW9FJSAYKUCsfBe8ASaODs0tnfkbPk6Fxtg6EJoweEN7Xjiy8q3ZRK/8Zg+W76o1t6hGKDs0OuVHfc9Ub+KTaJdZGTBypqGsw1xqRgdGmaLBnTKmtyDL1/I45W974LhX1dofYCGX2rYzqcWHKUNW0Symrxf9hSZyr9DklH7bRUc/JFl+YpM7TOZ03MzAT9gLTVUYT0FX9LQ/cefOOioCm/wdR9bt9JzzhWcG+7JjMmYU6nE12niXeE3reXd2x3G2+oR4hprWh1UyIX92CRG0HU6x30iXanq55x0/FdoVHeuZjGIiyNrV7EN5GU7HNzjM8QmHnCoKPvEslP1A4kY5bczScdEe9nbf+7X731HuoB1k1iVL1XQ8K8bjtIxsIvjUys8HZWeLQyxj9IAWRB2fA/bet31er33NUr2b1fEjGIMYhB3VyhLK3LbVkggdufaRIVkKkgca9im0M4XsaQ5e2qq1yrFI56eyjuchGGt5POJ3AYxg4pSU2EgwDmuuoxHWBtEUiSS/k5cunznu+CWMAecpdprNMbi2j7XL9izpNIwVmlUa/AX/pDw9Jmzw3/VYXHUSfKFu9wnfnprF29t1SbUA42bqC2YsGyjl5FHDgk1cZLLCk8IYsxUDmjFFORdFZkt8QlPeBxW8enWwyO+q9iKN4hRXaFJzw1JdqV80wGxaJKKiaNWHQckZoKY1IbBuWzvJ5bf8Ei2p2SFmlbcnRmiqxLy0iGxyMrOd4FKiAVx9GAc61XsYEVd40Dovm1MxYGnx3gte66JlZVgEA1hdjRkBm+apTFLpVc7fExtlKjfqtQ1ag0f5JaKCD22ZW+s6hdcmSuD2JslREMtNNlU08q77wKSbylnJGZZsA2VUBMUoYYk87Q2j9cOIP24Rob7hq9qvHg+VN+5hlF4zsUMqqEGCs1DEn0wC3dBZoUQ7xwO3vk/ttCEtpaf7QDthnUvyLSVfbK5IaB63pYMC9TOcNmoF6mJen2MBloShVQS6hxNkwhVVm1tsoUmJVbBZ8QklGBXj78TSAZbquIn2zG18eDqmoxO+cRvaE1h+7ROIhSyfJrXGgxTJfV4ZedrEfWvqNCxR26I66ondtEiC+q62tvcExCDLu5gqeAIXek9rqDProiN4ghFwnq+qDys3p5vh/1+f4igO/K1/JyLxg+aCWMGJY+EeLoxtaTUatUq+qWdkOKf8gAqrWTTLhmFZuKX2N2ppvOlmlwoX5Vh4diAvOwvUjwpsdy2A4ZN4Ap3h2M6N4iBOo/eeNNnALhDtGN0QLCxO+bqRRFzdFpi+VtBQ1q59xJYJ+tTl6Y+3N6xeRWWDTGSl8NZocXTnnEnpjk6nihSo7mg3Zj4Wr4ekDDlcjD13d/Z88hWQxOj5g9WfKhX9msHZ0gaIOHfU2JhkBhQVJJYECUu7clR7RelXGtVihAl5w9Ci7CT/vqqplQqCu7lFovwn00i++tyFd5o1xvwxlIB+fFzGV5dDFBN/R19SkVOYhFHLRUdy3WO3b1+9tZIDflBfjAYrAkGtMjW7zb73Ro1AXb48KDl3Hx3/7lbw5JJaUE+A216gIunlbJ7h4f9Lt3f9d578HjM1RXGilKTwyVJPYeWXhgLMAcXBi5Qcaoaqu7iTdqW9AnFTCRXJgZa+NfiZ79JoT28pR3fJAhCItA/8zW54klG/wJu/zorLa2YO5HJ4dGlVuXYi/iksHT4UyIEIRHQxi9kIIXPf2ZP4O3fag0Wj41y8SVt3OF8UF/vXzev99fPyezaypAhQ4YMGTJkyJAhQ4YMGTJkyJAhQ4YMJ+E/arcsgRejGYcAAAAASUVORK5CYII="
+                        alt="jQuery" class="skill-icon-img jquery-logo">
+                    <span>jQuery</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-laravel skill-icon"></i>
+                    <span>Laravel</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Filament" class="skill-icon-img filament-logo">
+                    <span>Filament</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <img src="https://laravel-livewire.com/img/logo.svg" alt="Livewire"
+                        class="skill-icon-img livewire-logo">
+                    <span>Livewire</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-linux skill-icon"></i>
+                    <span>Linux</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-php skill-icon"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item animate-skill">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Professional
+                Experience</h2>
+            <div class="experience-item animate-timeline">
+                <div class="experience-dot"></div>
+                <div class="experience-content">
+                    <h3>Software Developer</h3>
+                    <p class="experience-company">Studio Matrix</p>
+                    <p class="experience-duration">Dec 2024 - June 2025 </p>
+                    <p> Contributed to the development of various web
+                        applications, with a strong focus on back-end logic
+                        using Laravel and front-end
+                        enhancements for improved user experience. Worked on
+                        several projects utilizing both the LAMP and TALL
+                        stacks, gaining hands-on
+                        experience in real-world development.</p>
+                </div>
+            </div>
+            <!-- Add more experience items here if needed -->
+        </div>
+    </section>
+
+    <!-- Licenses & Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Licenses &
+                Certifications</h2>
+
+            <div class="certification-list">
+                <!-- JavaScript Certificate -->
+                <a href="https://www.freecodecamp.org/certification/fcc1fd18c33-c59f-4af0-8ac7-d79d1a7956be/javascript-algorithms-and-data-structures-v8"
+                    class="certification-item animate-cert" target="_blank" rel="noopener noreferrer">
+                    <h3>JavaScript Algorithms and Data Structures</h3>
+                    <p class="issuer">freeCodeCamp</p>
+                </a>
+
+                <!-- Responsive Web Design Certificate -->
+                <a href="https://www.freecodecamp.org/certification/fcc1fd18c33-c59f-4af0-8ac7-d79d1a7956be/responsive-web-design"
+                    class="certification-item animate-cert" target="_blank" rel="noopener noreferrer">
+                    <h3>Responsive Web Design</h3>
+                    <p class="issuer">freeCodeCamp</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section id="resume" class="resume-section">
+        <div class="container resume-container animate-fade-in">
+            <h2 class="section-title">Download My Resume</h2>
+            <a href="resume.pdf" download class="resume-button">
+                📄 Download Resume
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <!-- Contact heading -->
+            <h2 class="section-title animate-fade-in">Contact Me</h2>
+
+            <!-- Map embedded-->
+            <div class="contact-map animate-fade-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14135.696981041287!2d85.343728!3d27.6578154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2bdcdba255e49533%3A0x99eb05882364dac!2sSoftware%20Developer%20%7C%20Laravel%20-%20Dikesh%20Khatri!5e0!3m2!1sen!2snp!4v1754053289974!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-layout">
+
+                <!-- 👨‍💻 Developer Animation -->
+                <div class="contact-animation">
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_3rwasyjy.json"
+                        background="transparent" speed="1" loop autoplay class="lottie-developer">
+                    </lottie-player>
+                </div>
+                <!--Contact Form -->
+                <div class="creative-contact-form">
+                    <h3 class="creative-title">Let's Connect</h3>
+                    <p class="creative-subtitle"><strong>Send an email</strong> — let’s collaborate, create, and build
+                        something great
+                        together 🚀</p>
+
+                    <form class="creative-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="2cab664c-bd8f-4d7e-9194-51da3993c442">
+
+                        <div class="creative-field">
+                            <input type="text" name="name" required>
+                            <span>Your Name</span>
+                            <i></i>
+                        </div>
+
+                        <div class="creative-field">
+                            <input type="email" name="email" required>
+                            <span>Your Email</span>
+                            <i></i>
+                        </div>
+
+                        <div class="creative-field">
+                            <textarea name="message" rows="2" required></textarea>
+                            <span>Your Message</span>
+                            <i></i>
+                        </div>
+
+                        <button type="submit" class="creative-send-btn">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <!-- Column 1: Contact Info -->
+            <div class="footer-column">
+                <h3>Dikesh Khatri</h3>
+                <p>Phone: 9811760892</p>
+                <p>Email: dikeshkhatree@gmail.com</p>
+                <p>Address: Imadol, Lalitpur</p>
+            </div>
+
+            <!-- Column 2: Category -->
+            <div class="footer-column">
+                <h4>Category</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://dikeshdahal.wordpress.com/" target="_blank" rel="noopener noreferrer">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Social -->
+            <div class="footer-column">
+                <h4>Social</h4>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/Dikeshkhatree"><img src="github.png" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/dikesh-khatri-89725631a/"><img src="linkedin.png"
+                            alt="LinkedIn" /></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="twitter.png" alt="Instagram" /></a>
+                    <a href="#"><img src="whatsapp.jpeg" alt="WhatsApp" /></a>
+                </div>
+                <p class="social-note">Find me on GitHub, LinkedIn,
+                    Facebook, or message me on WhatsApp for quick
+                    contact!</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Dikesh Khatri. All rights
+                reserved.</p>
+        </div>
+    </footer>
+    <!-- In Progress Popup -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content animate-popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3>🚧 In Progress</h3>
+            <p>This project is currently under development. Stay tuned!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Optional: close when clicking outside
+        window.addEventListener("click", function (e) {
+            const popup = document.getElementById("popup");
+            if (e.target === popup) {
+                closePopup();
+            }
+        });
+        document.getElementById("contactForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (response.ok) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message Sent!',
+                        text: 'Your message has been successfully sent.',
+                        confirmButtonColor: '#3085d6'
+                    });
+                    form.reset();
+                } else {
+                    throw new Error('Form submission failed.');
+                }
+            } catch (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Please try again later.',
+                    confirmButtonColor: '#d33'
+                });
+            }
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.closest('.faq-item');
+                const isActive = item.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                // Open this one if it wasn't already
+                if (!isActive) item.classList.add('active');
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
