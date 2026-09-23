@@ -1049,7 +1049,6 @@ nav {
     box-shadow: 0 6px 16px rgba(16, 24, 40, 0.07);
     transition: box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease;
 }
-
 /* Blurred backdrop hack removed — the screenshot itself is now cropped cleanly (object-fit: cover) */
 .experience-banner-bg {
     display: none;
